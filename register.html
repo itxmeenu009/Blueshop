@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BlueShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./register-style.css">
+</head>
+<body>    
+    <div class="signup-container">
+        <div class="signup-left">
+            <h2>Join BlueShop Today</h2>
+            <p>Create an account to enjoy exclusive benefits and a personalized shopping experience.</p>
+            <ul class="benefits-list">
+                <li><i class="fas fa-check-circle"></i> Fast and secure checkout</li>
+                <li><i class="fas fa-check-circle"></i> Save your shopping preferences</li>
+                <li><i class="fas fa-check-circle"></i> Track your order history</li>
+                <li><i class="fas fa-check-circle"></i> Get exclusive deals and offers</li>
+                <li><i class="fas fa-check-circle"></i> Create and manage your wishlist</li>
+            </ul>
+        </div>
+        <div class="signup-right">
+            <div class="signup-form">
+                <h2>Create Account</h2>
+                <p>Please fill in your details to create an account.</p>
+                
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-input">
+                            <input type="password" id="password" class="form-control" placeholder="Create a password" required>
+                            <button type="button" class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="password-strength-bar"></div>
+                        </div>
+                        <div class="password-requirements">
+                            Password must be at least 8 characters with uppercase, lowercase, number, and special character.
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                            <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div id="passwordMatch" class="password-requirements"></div>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="./terms.html">Terms of Service</a> and <a href="./privacy.html">Privacy Policy</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Create Account</button>
+                </form>
+                
+                <div class="divider">
+                    <span>Or sign up with</span>
+                </div>
+                
+                <div class="social-signup">
+                    <button class="social-btn" id="googleSignup">
+                        <i class="fab fa-google" style="color: #DB4437;"></i>
+                        <span>Google</span>
+                    </button>
+                    <button class="social-btn" id="facebookSignup">
+                        <i class="fab fa-facebook" style="color: #4267B2;"></i>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="social-btn" id="appleSignup">
+                        <i class="fab fa-apple"></i>
+                        <span>Apple</span>
+                    </button>
+                </div>
+                
+                <div class="signin-link">
+                    Already have an account? <a href="./Login.html">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="./register-script.js"> </script>
+</body>
+</html>

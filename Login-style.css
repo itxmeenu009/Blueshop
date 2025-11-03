@@ -1,0 +1,157 @@
+ :root {
+      --primary: #034f84;
+      --primary-rgb: rgb(3, 79, 132);
+      --primary-light: #2a6da4;
+      --primary-dark: #032a63;
+      --secondary: #f8f9fa;
+      --dark: #343a40;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+      --success: #28a745;
+      --danger: #dc3545;
+      --warning: #ffc107;
+      --info: #17a2b8;
+      --border-radius: 8px;
+      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --transition: all 0.3s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background:url('https://i.postimg.cc/02kR3kN6/homepage-bag-BG.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: var(--light);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      width: 100%;
+      max-width: 400px;
+      transition: var(--transition);
+    }
+
+    .login-form h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .login-form h2 i {
+      color: var(--primary);
+      margin-right: 0.5rem;
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+      font-size: large;
+    }
+
+    .input-group label i {
+      margin-right: 0.5rem;
+      color: var(--gray);
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--gray);
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+      box-sizing: border-box;
+      font-size: large;
+    }
+
+    .input-group input:focus {
+      border-color: var(--primary);
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.2);
+    }
+
+    .toggle-password {
+        position: absolute;
+        top: 70%;
+        right: 12px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: var(--gray);
+        font-size: 1rem;
+}
+
+
+    .forgot-link {
+      text-align: right;
+      margin-bottom: 1rem;
+    }
+
+    .forgot-link a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+
+    .forgot-link a:hover {
+      text-decoration: underline;
+      color: var(--primary-dark);
+    }
+
+    .input-group button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .input-group button:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .input-group button i {
+      margin-right: 0.2rem;
+      align-self: center;
+    }
+
+    .error-message {
+      color: var(--danger);
+      text-align: center;
+      margin-top: 1rem;
+      display: none;
+    }
+    .register{
+      text-align: center;
+      font-weight: 600;
+      
+    }
+    .register label{
+        color: #032a63;
+        font-size: large;
+        font-family: monospace;
+        margin: 0 auto;
+    }
+    .register a{
+      text-decoration: none;
+      color: #034f84;
+    }
+    .register a:hover{
+      text-decoration: underline;
+      color: var(--danger);
+    }
